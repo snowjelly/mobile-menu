@@ -10,7 +10,8 @@
   font-family: 'Merriweather', serif;
   --primary-dark: #121212;
   --secondary-light: #f4f4f5;
-  --text-color: #eee;
+  --text-color: #57534e;
+  --title-text-color: #eee;
 }
 
 button {
@@ -29,7 +30,7 @@ button {
 
 .header{
   background-color: var(--primary-dark);
-  color: var(--text-color);
+  color: var(--title-text-color);
   display: flex;
   justify-content: center;
   padding: 22px;
@@ -37,5 +38,17 @@ button {
 
 .main {
   display: flex;
-  min-height: calc(100vh - 84px - 28px);
+  min-height: calc(100vh - 84px - 52px);
+}
+
+.bottom-nav-bar {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding-bottom: 10px;
+}
+
+.bottom-nav-button {
+  display: flex;
+  flex-direction: column;
+  color: var(--text-color);
 }
